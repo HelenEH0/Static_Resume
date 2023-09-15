@@ -1,0 +1,220 @@
+style.css
+body{
+	margin:0px auto;
+	width:100%;
+	font-family: 'Cairo', sans-serif;
+  font-family: 'Cuprum', sans-serif;
+
+}
+nav ul li {
+	list-style-type:none;
+	float:left;
+	padding-right:2.5em;
+}
+nav ul {
+	float:right;
+	
+}
+nav {
+	margin: 0px auto;
+	width:100%;
+	height:50px;
+	background-color:#f38181; 
+	position:fixed; 
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #fff;
+}
+
+
+section{
+	background-color:#eaffd0; 
+
+}
+.home{
+	background-color:#fce38a;
+	text-align: center;
+	font-size: 40px; 
+	padding: 50px;
+	display: table;
+	height:80vh;
+	width:100%;
+}
+
+.inner{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.home .inner img{
+	width:250px;
+	height: auto; 
+}
+.about{
+	background-image:url('https://www.creativewebdesigner.in/wp-content/uploads/2017/07/slider-fullscreen-slide-2-1.jpg');
+    display: table;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+.about .inner{
+	display: table-cell;
+	vertical-align: middle;
+	width:50%;
+	float:left;
+	padding-top: 50px;
+	padding-left: 50px;
+}
+ .about .inner h1{
+ 	font-size: 48px;
+ 	line-height: 70px;
+ }
+
+
+
+
+.education {
+	background-color:#95e1d3;
+	display:table;
+	height:100vh;
+	width: 100%;
+
+}
+.education .inner{
+	padding:50px;
+
+}
+.education h1,.hobbies .inner h1, .skills .inner h1, .contact .inner h1{
+	font-size: 48px;
+
+} 
+
+.education .inner div, .hobbies .inner div,.skills .inner div {
+	float:left;
+	width:30%;
+	margin-left: 20px: 
+	margin-right:20px;
+	padding:1.5%;
+	text-align:center;
+}
+
+.education .inner div img, .hobbies .inner div img{
+	width:128px;
+	height: auto;
+}
+.education .inner div p, .hobbies .inner p, .skills .inner div ul li, .contact .inner p {
+	font-size: 24px;
+
+}
+.education .inner div h2 {
+	font-size: 32px;
+}
+.hobbies  {
+	background-color: #95e1d3;
+	display:table;
+	height:100vh;
+	width:100%
+}
+.hobbies .inner{
+	padding: 50px;
+}
+.skills{
+	background-image:url(https://online.csp.edu/wp-content/uploads/2013/10/Early-Childhood-Teachers-CSP.jpg);
+	display:table;
+	height:100vh;
+	width:100%;
+	background-repeat:round;
+	background-size: cover;
+} 
+.skills .inner div{
+	padding-left: 50px;
+	color: #fff;
+
+}
+.skills .inner div ul li{
+	list-style-type: none;
+}
+
+.skills .inner div ul li{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.contact .inner{
+	background-color:#eaffd0;
+	display:table;
+	height:100vh;
+	width: 100%; 
+	padding-left: 50px;
+	padding-top: 100px;
+	text-align: center;
+}
+
+.home .inner h1{
+	font-family: font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+
+}
+.hobbies .inner h1{
+	padding-top: 30px;
+}
+.about .inner p{
+	font-size: 28px;
+	text-align: left;
+    line-height: 50px;
+}
+.skills .inner h1{
+	padding-left: 30px;
+}
+
+/*responsive designing*/
+@media (min-width:320px) and (max-width: 767px)
+{
+	.home .inner img{
+		padding-top:50px;
+	}
+	.home .inner h1{
+		width:90%;
+	}
+     .about .inner{
+		width:95%;
+		padding:25px;
+	}
+	
+	.about .inner p{
+		font-size: 24px;
+		text-align: justify-all;
+	}
+	.education .inner div, .hobbies .inner div, .skills .inner div{
+		width:100%;
+
+	}
+	.contact .inner p{
+		padding-right: 50px;
+	}
+	.contact .inner h1{
+		padding-right: 100px;
+
+	}
+	#skills{
+		background:#f38181!important;
+	}
+	.skills .inner div ul li{
+		padding-right: 80px;
+	}
+}
+@media (min-width: 768px) and (max-width:1023px){
+	.about .inner{
+		width: 95%;
+	}
+	
+} 
+@media (min-width:1024px) and (max-width:1439px){
+	.about .inner{
+		background-size:contain; 
+	}
+
+}
